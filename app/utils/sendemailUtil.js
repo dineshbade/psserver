@@ -7,7 +7,7 @@
      host: "smtp.gmail.com",
      auth: {
          user: "dineshbade1992@gmail.com",
-         pass: "D!nesh3@de"
+         pass: "XXXXXX"
      }
  });
  module.exports = {
