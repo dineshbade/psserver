@@ -1,9 +1,10 @@
 var mongoose = require('mongoose');
+var user = require('./user');
 
 var Schema = mongoose.Schema;
 var DetailSchema = new Schema({
 
-	title:{
+	type:{
 		type:String,
 		require:true
 	},
@@ -19,7 +20,8 @@ var DetailSchema = new Schema({
 	createdAt:{
 		type:Date,
 		require:true
-	}
+	},
+	user:[{type:Schema.Types.ObjectId,ref:'user'}]
 
 
 });
